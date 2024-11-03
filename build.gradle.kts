@@ -21,6 +21,10 @@ application {
     mainClass = "intensiv.Main"
 }
 
+tasks.withType<JavaExec> {
+    standardInput = System.`in`
+}
+
 tasks.test {
     useJUnitPlatform()
 }
