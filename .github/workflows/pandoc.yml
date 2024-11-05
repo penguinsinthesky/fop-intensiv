@@ -1,0 +1,11 @@
+name: Generate PDF
+
+on: push
+
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: docker://pandoc/latex:latest
+        with:
+          args: "--help" # gets appended to pandoc command
