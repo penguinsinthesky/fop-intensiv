@@ -11,7 +11,7 @@ jobs:
         with:
           args: "exercises/IntensivAufgaben.md -f markdown-implicit_figures -o IntensivAufgaben.pdf" # gets appended to pandoc command
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: IntensivAufgaben
           path: IntensivAufgaben.pdf
