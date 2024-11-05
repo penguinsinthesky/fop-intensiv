@@ -8,4 +8,4 @@ jobs:
     steps:
       - uses: docker://pandoc/latex:latest
         with:
-          args: "--help" # gets appended to pandoc command
+          args: "exercises/IntensivExercises.md -f markdown-implicit_figures -o exercises/IntensivExercises.pdf" # gets appended to pandoc command
