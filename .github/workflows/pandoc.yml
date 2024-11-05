@@ -6,6 +6,12 @@ jobs:
   convert_via_pandoc:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - uses: docker://pandoc/latex:latest
         with:
-          args: "exercises/IntensivExercises.md -f markdown-implicit_figures -o exercises/IntensivExercises.pdf" # gets appended to pandoc command
+          args: "exercises/IntensivExercises.md -f markdown-implicit_figures -o IntensivExercises.pdf" # gets appended to pandoc command
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: IntensivExercises
+          path: IntensivExercises.pdf
