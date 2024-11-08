@@ -22,4 +22,9 @@ public class I3 {
         // TODO I3 b)
     }
 
+    static void robotRotations() {
+        Robot robot = new Robot(3, 3, Direction.RIGHT, 8, RobotFamily.SQUARE_ORANGE);
+        // TODO I3 c)
+    }
+
 }

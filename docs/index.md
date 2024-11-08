@@ -67,7 +67,7 @@ Wenn ein Duplikat gefunden wird, sollen beide Indizes ausgegeben werden, an dene
 
 ### f)
 
-Programmieren Sie eine Passwortüberprüfung. Das Programm fragt einen Nutzer solange auf der Konsole nach einer Eingabe, bis er das Richtige Passwort in die Konsole eingegeben hat.
+Programmieren Sie eine Passwortüberprüfung. Das Programm fragt einen Nutzer so lange auf der Konsole nach einer Eingabe, bis er das Richtige Passwort in die Konsole eingegeben hat.
 Nachdem das richtige Passwort eingegeben wurde, gibt das Programm eine positive Nachricht aus und terminiert.
 Nutzen Sie zum einlesen einer Konsolen-Zeile `readLine();`. Überlegen Sie sich, welcher Schleifentyp hier besonders elegant ist!
 
@@ -76,7 +76,7 @@ Nutzen Sie zum einlesen einer Konsolen-Zeile `readLine();`. Überlegen Sie sich,
 ### a)
 
 Sei `bob` ein `Robot`. Bob hat eine gewisse Anzahl Münzen, die er ablegen will.
-Schreiben sie eine `while`-Schleife, in der Bob *solange* eine Münze ablegt, wie er noch Münzen hat.
+Schreiben sie eine `while`-Schleife, in der Bob *so lange* eine Münze ablegt, wie er noch Münzen hat.
 
 ### b)
 
@@ -85,3 +85,16 @@ Der Roboter befindet sich zu Beginn bei Position $(0, 0)$ und schaut nach rechts
 Sie dürfen davon ausgehen, dass der Roboter genügend Münzen hat.
 
 ![Treppen](assets/Stairs.png)
+
+### c)
+
+Sei `robot` ein Roboter. Drehen Sie den Roboter so lange, bis er nach oben schaut.
+Nach jeder Drehung warten Sie eine Sekunde, in dem Sie `waitSecond();` aufrufen.
+
+Anschließend soll sich der Roboter einmal um seine eigene Achse drehen. Nach jeder Drehung soll er wieder eine Sekunde warten.
+
+Zuletzt soll der Roboter sich so lange im Kreis drehen und Münzen ablegen (siehe Abbildung), bis er keine Münzen mehr hat.
+Dafür soll der Roboter sich *erst* bewegen und *danach* überprüfen, ob er noch Münzen hat.
+Überlegen Sie sich, welcher Schleifentyp hier besonders gut geeignet ist.
+
+![Kreis](assets/Circle.png)
