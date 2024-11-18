@@ -138,3 +138,41 @@ Programmieren Sie eine Methode mit Default-Visibility, die einen `boolean` zurü
 Diese Methode soll genau dann `true` zurückgeben, wenn zwei als Parameter übergebene `double`s
 sich um weniger als $0,1$ unterscheiden.
 Überlegen Sie sich selbst einen sinnvollen Namen für die Methode und die formalen Parameter.
+
+## I5: Eigene Klassen
+
+### a)
+
+#### i)
+
+Erstellen Sie in dem Package `intensiv` eine neue `public`-Klasse namens `Car`.
+In unserer Welt hat jedes Auto folgende Eigenschaften:
+
+- Modellname
+- Anzahl Sitze
+- Kraftstoffverbrauch pro 100 km
+- Leistung in PS
+
+Modellieren Sie diese Eigenschaften durch Attribute.
+Überlegen Sie sich dafür sinnvolle Namen und Typen der Attribute.
+
+Schreiben Sie nun einen Konstruktor, der alle diese Attribute mit als Parameter übergebenen Werten initialisiert.
+
+#### ii)
+
+Erstellen Sie in der neuen Klasse eine `public`-Methode namens `honk`, die nichts zurückgibt und keine Parameter nimmt.
+Sie soll `"Beep"` auf der Konsole ausgeben.
+
+#### iii)
+
+Erstellen Sie analog zu **i)** eine weitere Klasse `PickUp`, welche Pick-Ups modellieren soll.
+Die Klasse erbt von `Car` und hat ein weiteres Attribut:
+
+- Ladekapazität in kg
+
+Die Klasse soll einen Konstruktor haben, die alle für `Car` relevanten Konstruktor-Parameter weiterreicht
+und die eigenen Attribute mit aktualen Parametern initialisiert.
+
+#### iv)
+
+Überschreiben Sie in `PickUp` die `honk`-Methode. Die neue Methode soll `"Mööp"` ausgeben.
