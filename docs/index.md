@@ -98,3 +98,43 @@ Dafür soll der Roboter sich *erst* bewegen und *danach* überprüfen, ob er noc
 Überlegen Sie sich, welcher Schleifentyp hier besonders gut geeignet ist.
 
 ![Kreis](assets/Circle.png)
+
+## I4: Methoden
+
+### a)
+
+#### i)
+
+Erstellen Sie in der Klasse `Main` eine `private` Methode `sayHello`.
+Diese Methode hat keinen Rückgabewert und hat keine formalen Parameter.
+Die Methode soll `"Hello, world!"` auf der Konsole ausgeben.
+
+Fügen Sie vor dem Rückgabetypen der Methode das Schlüsselwort `static` ein.
+Rufen sie nun die Methode aus der `main`-Methode auf.
+
+#### ii)
+
+Fügen Sie nun zu der Methode den formalen Parameter `name` des Typen `String` hinzu.
+Ändern Sie die Konsolen-Ausgabe zu `"Hello, <name>!"`, wobei `<name>` durch den aktualen Parameter `name` ersetzt werden soll.
+
+Verändern Sie den Aufruf der Methode so, dass sie `"Hello, Bob!"` auf der Konsole ausgeben wird.
+
+### b)
+
+Schreiben Sie eine neue Methode `square`, die `public` und `static` ist.
+Die Methode soll einen `double` namens `x` als Parameter entgegennehmen und einen `double` zurückgeben.
+Gebe Sie innerhalb der Methode den Wert von $x^2$ zurück.
+
+Probieren Sie die Methode mit einigen Eingaben in der `main`-Methode aus und geben Sie die Ergebnisse aus.
+
+### c)
+
+Erstellen Sie eine `private`-Methode `averageLength`, die aus einem als Parameter übergebenen `String`-Array
+die durchschnittliche Länge der `String`s als `float` zurückgibt.
+
+### d)
+
+Programmieren Sie eine Methode mit Default-Visibility, die einen `boolean` zurückgibt.
+Diese Methode soll genau dann `true` zurückgeben, wenn zwei als Parameter übergebene `double`s
+sich um weniger als $0,1$ unterscheiden.
+Überlegen Sie sich selbst einen sinnvollen Namen für die Methode und die formalen Parameter.
