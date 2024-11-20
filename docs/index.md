@@ -230,3 +230,25 @@ Der Definitionsbereich ist $\mathbb{R}$.
 
 Verändern Sie das Interface so, dass die Methode `isDefined` nicht immer von der Subklasse implementiert werden muss.
 Die Standard-Implementierung soll angaben, dass die Funktion für alle reellen Zahlen definiert ist.
+
+### b)
+
+Nun werden Sie ein eigenes Interface erstellen.
+
+#### i)
+
+Erstellen Sie ein neues Interface `SoundMaker`. Dieses soll eine abstrakte `void`-Methode `makeSound()` ohne Parameter haben.
+
+#### ii)
+
+Implementieren Sie dieses Interface in einer neuen Klasse `Dog`. Diese Klasse soll die Methode `makeSound` implementieren,
+indem `"Woof Woof!"` auf der Konsole ausgegeben werden soll.
+
+#### iii)
+
+Implementieren Sie das Interface erneut in einer neuen Klasse `PoliceCar` und gehen Sie analog wie in `ii)` vor.
+Polizeiautos machen jedoch das Geräusch `"Wee Woo, Wee Woo"`.
+
+#### iv)
+
+Warum war hier die Verwendung eines Interfaces angemessener als die Verwendung einer abstrakten Klasse?
