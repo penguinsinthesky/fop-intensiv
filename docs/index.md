@@ -223,6 +223,7 @@ signum(x)=
 \end{equation}
 $$
 
+Anschaulich bildet Sie eine reelle Zahl auf ihr Vorzeichen ab (`"+"` $\hat=$ `1` und `"-"` $\hat=$ `-1`).
 Der Definitionsbereich ist $\mathbb{R}$.
 
 #### iv) Default-Methoden
