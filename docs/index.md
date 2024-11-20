@@ -176,3 +176,56 @@ und die eigenen Attribute mit aktualen Parametern initialisiert.
 #### iv)
 
 Überschreiben Sie in `PickUp` die `honk`-Methode. Die neue Methode soll `"Mööp"` ausgeben.
+
+## I6: Interfaces
+
+Nachdem Sie nun eigene Klassen erstellt haben, werden wir uns nun mit Interfaces beschäftigen.
+Alle Klassen und Interfaces sind im Package `intensiv` zu erstellen.
+
+### a)
+
+In der Vorlage ist das Interface `DoubleToDoubleFunction` gegeben, was ähnlich zu dem ist, was Sie bereits
+aus der Vorlesung kennen.
+
+Die Methode `apply` bildet den übergebenen `x`-Wert auf einen Funktionswert ab.
+Die Methode `isDefined` gibt einen `boolean` zurück, der ausdrückt, ob die Funktion für den gegebenen `x`-Wert definiert ist.
+
+Ihre Aufgabe ist es, verschiedene Funktionen zu implementieren, in dem Sie für jede Funktion eine Klasse erstellen, die das Interface implementiert.
+
+Wenn Sie eine Funktion implementiert haben, können Sie sie wie folgt auf dem Bildschirm plotten:
+
+```java
+DoubleToIntFunction f = new ... ;// new Instanz der Funktionsklasse
+Plotter.plot(f);
+```
+
+#### i) Sinus
+
+Implementieren Sie die Funktion $f(x) := sin(x)$. Zur Erinnerung: `sin` ist für *alle* reellen Zahlen definiert.
+Zur berechnung des Sinus nutzen Sie die Methode `Math.sin(x)`.
+
+#### ii) Logarithmus zur Basis 2
+
+Schreiben nun die Funktion $f(x) := log_{2}(x)$. Achten Sie auf den Definitionsbereich!
+Zur Berechnung des Logarithmus finden Sie analog zum Sinus eine passende Methode in der Klasse `Math`.
+
+#### iii) Signum
+
+Implementieren Sie die Signum-Funktion. Sie sieht wie folgt aus:
+$$
+\begin{equation}
+signum(x)=
+    \begin{cases}
+    -1 & \text{falls } x < 0 \\
+    0 & \text{falls } x = 0 \\
+    1 & \text{falls } x > 0 \\
+    \end{cases}
+\end{equation}
+$$
+
+Der Definitionsbereich ist $\mathbb{R}$.
+
+#### iv) Default-Methoden
+
+Verändern Sie das Interface so, dass die Methode `isDefined` nicht immer von der Subklasse implementiert werden muss.
+Die Standard-Implementierung soll angaben, dass die Funktion für alle reellen Zahlen definiert ist.
