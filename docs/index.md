@@ -252,3 +252,66 @@ Polizeiautos machen jedoch das Geräusch `"Wee Woo, Wee Woo"`.
 #### iv)
 
 Warum war hier die Verwendung eines Interfaces angemessener als die Verwendung einer abstrakten Klasse?
+
+## I7: Racket
+
+Wir wollen uns nun etwas mit Racket beschäftigen. Sie sollen in der Lage sein, Racket Code zu lesen und
+äquivalenten Java-Code zu schreiben.
+
+### a)
+
+Wir fangen an mit einfachen Operationen. Wie würden Sie die folgenden Operationen in Java schreiben?
+
+- `(+ 1 2)`
+- `(* i (+ 5 42))`
+- `(remainder p (/ q 2))`
+- `(or (< x y) #f)`
+
+### b)
+
+Jetzt übersetzen Sie ihre erste Funktion zu Java-Code. Gegeben sei folgende Funktion:
+
+```racket
+;; Type: natural natural -> natural
+;; Returns: the absolute value of x
+(define (my-abs x)
+  (if (< x 0) (- x) x)
+)
+```
+
+Anhand der Kommentare können Sie ablesen, welche Typen die Parameter und der Rückgabewert haben.
+Implementieren Sie diese Funktion als `public` `static` Java-Methode mit dem Namen `myAbs`.
+
+### c)
+
+Besonders wichtig für Sie zu verstehen, wie rekursive Funktionen auf Listen funktionieren.
+Lesen Sie die folgende Racket-Funktion und versuchen Sie, ihre Funktionsweise zu verstehen.
+
+```racket
+;; Type: list element -> boolean
+;; Returns: true if element is contained in list
+(define (contains lst element)
+  (cond
+    [(empty? lst) #f]
+    [(= (first lst) element) #t]
+    [else (contains (rest lst) element)]
+  )
+)
+```
+
+Setzen Sie diese Funktion nun als Java-Methode um. Als Liste sollen Sie `int`-Arrays verwenden.
+Anstatt den "Rest" der Liste abzuspalten, sollen Sie beim rekursiven Aufruf den Index übergeben,
+bei dem der zu behandelnde Teil des Arrays beginnt.
+
+Die Methode soll also die folgende Signature haben:
+```java
+public static boolean contains(int[] array, int element, int startIndex) {
+    ...
+}
+```
+
+Als Aufrufer der Methode würden Sie wie folgt vorgehen:
+
+```java
+contains(array, element, 0); // 0 means start searching at start of array
+```
