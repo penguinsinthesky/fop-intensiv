@@ -315,3 +315,94 @@ Als Aufrufer der Methode würden Sie wie folgt vorgehen:
 ```java
 contains(array, element, 0); // 0 means start searching at start of array
 ```
+
+## I8: Funktionale Programmierung in Java
+
+Hier wenden wir uns Functional Interfaces und Lambda-Ausdrücken in Java zu.
+Erstellen Sie hierzu zunächst das Package `i8`, in das wir in dieser Aufgabe den Code schreiben werden.
+
+### a)
+
+#### i)
+
+Erstellen Sie zunächst ein Interface namens `StringPredicate`.
+Welche Voraussetzungen muss dieses Interface erfüllen, damit es ein Functional Interface ist?
+
+#### ii)
+
+Fügen Sie diesem Interface jetzt seine Functional-Methode `test` hinzu.
+Diese soll von `String` auf `boolean` abbilden.
+
+#### iii)
+
+Legen Sie die Klasse `StringTester` an. Hier schreiben Sie eine `public` `static`-Methode `printMatching`.
+Diese Methode hat keine Rückgabe und nimmt als Parameter ein `String`-Array und ein `StringPredicate`
+entgegen.
+
+Die Methode soll alle Strings auf der Konsole ausgeben, für die die `test`-Methode des `StringPredicate` `true` liefert.
+
+#### iv)
+
+Wir wollen nun den Code testen und begeben uns dafür in die `main`-Methode der `Main`-Klasse.
+
+Erstellen Sie hier ein neues Array, das die folgenden `String`s enthält:
+
+- `"Hallo"`
+- `"Hello"`
+- `"Hola"`
+- `"Bonjour"`
+
+Jetzt rufen Sie die Methode `printMatching` mit diesem Array auf, die Sie gerade geschrieben haben.
+Als `StringPredicate` übergeben Sie einen Lambda-Ausdruck, der genau dann true zurückgibt, wenn
+der zu testende String mit `"H"` anfängt.
+Schauen Sie sich hierzu die Methode `startsWith` der Klasse `String` an.
+
+Verändern Sie das Lambda so, dass es für den übergebenen `String` genau dann `true` zurückgibt,
+wenn dieser genau `5` Zeichen lang ist.
+
+#### v)
+
+Haben Sie das Lambda in der Standardform oder in der Kurzform geschrieben?
+Schreiben Sie das Lambda nochmal in der anderen Form und überlegen Sie sich, wann welche Form sinnvoll ist.
+
+### b)
+
+Jetzt werden Sie die `map`-Methode implementieren. Diese typische Array-Operation bildet ein Array
+auf ein neues Array mit einem neuen Typen ab. Dafür wird eine Funktion $mapper: E1 \rightarrow E2$ verwendet,
+wobei $E1$ der Element-Typ des ersten und $E2$ der des zweiten Arrays ist.
+Mit dieser Funktion wird jedes Element des ersten Arrays auf ein neues Element abgebildet und im neuen Array gespeichert.
+
+#### i)
+
+Erstellen Sie ein Functional Interface `IntToStringMapper` mit einer Functional-Methode
+$map: int \rightarrow String$.
+
+#### ii)
+
+Schreiben Sie in eine neue Klasse `ArrayOperations` die `public` `static`-Methode `mapArray`,
+welche einen Parameter `input` des Typen `int[]` und `mapper` des Typen `IntToStringMapper` hat.
+Die Methode gibt ein `String[]` zurück.
+
+In der Methode soll ein neues `String`-Array erstellt werden und mit den durch `mapper` abgebildeten Werten
+aus `input` befüllt werden.
+
+Beispiel:
+
+Sei `mapper` eine Funktion, die einen `int` auf seine String-Repräsentation abbildet.
+`{1, 2, 3}` wird dann auf `{"1", "2", "3"}` abgebildet.
+
+#### iii)
+
+Rufen Sie diese neue Methode mit einem `int`-Array Ihrer Wahl auf.
+Die übergebene `mapper`-Funktion soll ein Lambda sein, die die folgende Funktion realisiert:
+
+$$
+\begin{equation}
+mapper(i)=
+\begin{cases}
+    \text{"negativ"}    & \text{falls } i < 0 \\
+    \text{"null"}       & \text{falls } i = 0 \\
+    \text{"positiv"}    & \text{falls } i > 0 \\
+\end{cases}
+\end{equation}
+$$
