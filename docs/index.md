@@ -195,7 +195,7 @@ Ihre Aufgabe ist es, verschiedene Funktionen zu implementieren, in dem Sie für 
 Wenn Sie eine Funktion implementiert haben, können Sie sie wie folgt auf dem Bildschirm plotten:
 
 ```java
-DoubleToIntFunction f = new ... ;// new Instanz der Funktionsklasse
+DoubleToDoubleFunction f = new ... ;// new Instanz der Funktionsklasse
 Plotter.plot(f);
 ```
 
