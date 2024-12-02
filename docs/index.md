@@ -195,7 +195,7 @@ Ihre Aufgabe ist es, verschiedene Funktionen zu implementieren, in dem Sie für 
 Wenn Sie eine Funktion implementiert haben, können Sie sie wie folgt auf dem Bildschirm plotten:
 
 ```java
-DoubleToIntFunction f = new ... ;// new Instanz der Funktionsklasse
+DoubleToDoubleFunction f = new ... ;// new Instanz der Funktionsklasse
 Plotter.plot(f);
 ```
 
@@ -204,9 +204,9 @@ Plotter.plot(f);
 Implementieren Sie die Funktion $f(x) := sin(x)$. Zur Erinnerung: `sin` ist für *alle* reellen Zahlen definiert.
 Zur berechnung des Sinus nutzen Sie die Methode `Math.sin(x)`.
 
-#### ii) Logarithmus zur Basis 2
+#### ii) Logarithmus zur Basis e
 
-Schreiben nun die Funktion $f(x) := log_{2}(x)$. Achten Sie auf den Definitionsbereich!
+Schreiben nun die Funktion $f(x) := log_{e}(x)$. Achten Sie auf den Definitionsbereich!
 Zur Berechnung des Logarithmus finden Sie analog zum Sinus eine passende Methode in der Klasse `Math`.
 
 #### iii) Signum
