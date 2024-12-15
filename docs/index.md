@@ -272,7 +272,7 @@ Wir fangen an mit einfachen Operationen. Wie würden Sie die folgenden Operation
 Jetzt übersetzen Sie ihre erste Funktion zu Java-Code. Gegeben sei folgende Funktion:
 
 ```racket
-;; Type: natural natural -> natural
+;; Type: number -> natural
 ;; Returns: the absolute value of x
 (define (my-abs x)
   (if (< x 0) (- x) x)
