@@ -434,7 +434,7 @@ Was passiert, wenn aus der `main`-Methode eine Exception herausfliegt, ohne gefa
 #### iv)
 
 Schreiben Sie die `main`-Methode nun so um, dass die Exception gefangen wird.
-Wenn eine Exception auftritt, soll sie gefangen werden und auf der Konsole sollen Sie `"Cannot calculate log of <= 0"` ausgeben.
+Wenn eine Exception auftritt, soll sie gefangen werden und auf der Konsole soll ihre Nachricht ausgegeben werden.
 
 ### b)
 
