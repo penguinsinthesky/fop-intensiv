@@ -406,3 +406,36 @@ mapper(i)=
 \end{cases}
 \end{equation}
 $$
+
+## I9: Exceptions
+
+### a)
+
+#### i)
+
+Erstellen Sie im Package `intensiv.exceptions` eine Klasse `NotDefinedException`, die von `Exception` ableitet.
+Die Klasse soll einen Konstruktor haben, der einen `double`-Wert x als Parameter besitzt.
+Er soll den `super`-Konstruktor der Klasse `Exception` aufrufen, der einen `String`-Parameter besitzt.
+Als Argument sollen Sie diesem `super`-Konstruktor `"Undefined value: " + x` übergeben.
+
+#### ii)
+
+In der Klasse `I9` finden Sie die Methode `calculateLog`. Verändern Sie die Signature so, dass die `NotDefinedException`
+in der Methode geworfen werden darf. Nun sollen Sie prüfen, ob der aktuale Parameter `x` kleiner oder gleich $0$ ist.
+Wenn das der Fall ist, soll eine neue `NotDefinedException` geworfen werden und ihrem Konstruktor der x-Wert übergeben werden.
+
+#### iii)
+
+Rufen Sie in `main` die Methode mit einem `double`-Wert auf, der kleiner als $0$ ist.
+Der Compiler wird Sie dazu zwingen, die Signatur der `main`-Methode ebenfalls anzupassen.
+
+Was passiert, wenn aus der `main`-Methode eine Exception herausfliegt, ohne gefangen zu werden?
+
+#### iv)
+
+Schreiben Sie die `main`-Methode nun so um, dass die Exception gefangen wird.
+Wenn eine Exception auftritt, soll sie gefangen werden und auf der Konsole soll ihre Nachricht ausgegeben werden.
+
+### b)
+
+Erklären Sie den Unterschied zwischen Exceptionklassen, die von `RuntimeException` ableiten, und solchen, die das nicht tun.
