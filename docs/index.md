@@ -439,3 +439,59 @@ Wenn eine Exception auftritt, soll sie gefangen werden und auf der Konsole soll 
 ### b)
 
 Erklären Sie den Unterschied zwischen Exceptionklassen, die von `RuntimeException` ableiten, und solchen, die das nicht tun.
+
+## I10: Generics und Collections
+
+Das nächste Thema ist Generics, insbesondere in Verbindung mit Collections.
+Alle Methoden dazu werden in `intensiv.i10.GenericOperations` implementiert.
+
+### a)
+
+#### i)
+
+Erstellen Sie eine `public` `static` Methode `findMin`, die einen `Integer` zurückgibt und eine `Integer`-Collection
+als Parameter entgegennimmt.
+
+Diese Methode soll die kleinste Zahl der Collection finden und zurückgeben.
+Wenn es keine gibt, können Sie `null` zurückgeben.
+
+#### ii)
+
+Wir wollen jetzt diese Methode weiter verallgemeinern. Man kann schließlich nicht nur das Minimum von `Integer`n
+bestimmen, sondern auch von `Double`s oder allem, was total geordnet ist.
+
+Verändern Sie den Parameter so, dass alle Collections akzeptiert werden, die Elemente speichern,
+die das Interface `Comparable` implementieren. Rufen Sie sich die Funktionsweise von `Comparable` in Erinnerung.
+
+Sie können nun mithilfe der `compare`-Methode das Minimum bestimmen.
+Sie müssen jetzt den Rückgabetyp der Methode so anpassen, dass wieder jedes Element der Collection zurückgegeben werden darf.
+
+#### iii)
+
+Wie Sie bemerkt haben, ist der Rückgabetyp in `ii)` noch nicht sonderlich elegant.
+Deshalb werden wir jetzt die Methode mit noch weiter verallgemeinern, sodass sie ihr volles Potenzial ausreizt.
+
+Fügen Sie der Methode den Typ-Parameter `T` hinzu. Achten Sie darauf, dass `T` nur mit Typen instantiiert werden darf,
+die `Comparable<T>` implementieren. Ändern Sie nun den Collection-Parameter so, dass die Collection Elemente des Typen `T` speichert.
+Jetzt ist es Ihnen möglich, den Rückgabetyp zu `T` zu verändern.
+
+Jetzt ist die Methode vollständig *generifiziert* und kann für alle Ermittlungen von Minima verwendet werden!
+
+### b)
+
+Schreiben Sie die `public` `static` Methode `getRandomElement`. Diese hat einen Typ-Parameter `T`.
+Der Rückgabetyp soll `T` sein. Als formalen Parameter soll die Methode eine Liste haben,
+die Elemente des Typen `T` speichert.
+
+Ihr Aufgabe ist es nun, ein zufälliges Element aus der Liste zu wählen und zurückzugeben.
+Um einen zufälligen Index zu generieren, verwenden Sie `getRandom`.
+Ist die Liste leer, können Sie `null` zurückgeben.
+
+### c)
+
+Erstellen Sie nun ein generisches Functional Interface `GenericPredicate` im Package `i10`.
+Dieses soll einen Typ-Parameter `T` haben. Die funktionale Methode soll diese Signatur haben:
+
+$\text{test} : T \rightarrow boolean$
+
+Welchen Vorteil haben generische Functional Interfaces? Gibt es auch Nachteile?
