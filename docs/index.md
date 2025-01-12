@@ -479,16 +479,6 @@ Jetzt ist die Methode vollständig *generifiziert* und kann für alle Ermittlung
 
 ### b)
 
-Schreiben Sie die `public` `static` Methode `getRandomElement`. Diese hat einen Typ-Parameter `T`.
-Der Rückgabetyp soll `T` sein. Als formalen Parameter soll die Methode eine Liste haben,
-die Elemente des Typen `T` speichert.
-
-Ihr Aufgabe ist es nun, ein zufälliges Element aus der Liste zu wählen und zurückzugeben.
-Um einen zufälligen Index zu generieren, verwenden Sie `getRandom`.
-Ist die Liste leer, können Sie `null` zurückgeben.
-
-### c)
-
 Erstellen Sie nun ein generisches Functional Interface `GenericPredicate` im Package `i10`.
 Dieses soll einen Typ-Parameter `T` haben. Die funktionale Methode soll diese Signatur haben:
 
