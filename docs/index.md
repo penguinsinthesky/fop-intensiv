@@ -420,13 +420,13 @@ Als Argument sollen Sie diesem `super`-Konstruktor `"Undefined value: " + x` üb
 
 #### ii)
 
-In der Klasse `I9` finden Sie die Methode `calculateLog`. Verändern Sie die Signature so, dass die `NotDefinedException`
+In der Klasse `I9` finden Sie die Methode `calculateLog`. Verändern Sie die Signatur so, dass die `NotDefinedException`
 in der Methode geworfen werden darf. Nun sollen Sie prüfen, ob der aktuale Parameter `x` kleiner oder gleich $0$ ist.
 Wenn das der Fall ist, soll eine neue `NotDefinedException` geworfen werden und ihrem Konstruktor der x-Wert übergeben werden.
 
 #### iii)
 
-Rufen Sie in `main` die Methode mit einem `double`-Wert auf, der kleiner als $0$ ist.
+Rufen Sie in `main` die Methode mit einem `double`-Wert auf, der kleiner als oder gleich $0$ ist.
 Der Compiler wird Sie dazu zwingen, die Signatur der `main`-Methode ebenfalls anzupassen.
 
 Was passiert, wenn aus der `main`-Methode eine Exception herausfliegt, ohne gefangen zu werden?
