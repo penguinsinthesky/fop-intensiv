@@ -1,7 +1,5 @@
 package intensiv.i11;
 
-import java.util.Objects;
-
 public class MyLinkedList<T> {
 
     private ListItem<T> head;
@@ -18,10 +16,12 @@ public class MyLinkedList<T> {
      */
     public void add(T key) {
         // TODO I11 b)
+        intensiv.Util.crash();
     }
 
     public boolean contains(T key) {
         // TODO I11 c)
+        return intensiv.Util.crash();
     }
 
     public T get(int index) {
@@ -29,7 +29,7 @@ public class MyLinkedList<T> {
             throw new IndexOutOfBoundsException(index);
         }
 
-        // TODO I11 d)
+        return intensiv.Util.crash();
     }
 
     public ListItem<T> getHead() {
