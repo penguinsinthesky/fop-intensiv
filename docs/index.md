@@ -42,8 +42,10 @@ System.out.println("x = " + x);
 
 ### a)
 
-Gegeben sei der Integer `age`, in dem das Alter einer Person gespeichert ist. Schreiben Sie eine `if-else`-Anweisung, die überprüft, ob die Person volljährig ist.
-Wenn sie volljährig ist, soll `"Du bist volljährig"` auf der Konsole ausgegeben werden. Ansonsten soll ausgegeben werden, wie viele Jahre noch zur Volljährigkeit fehlen.
+Gegeben sei der Integer `age`, in dem das Alter einer Person gespeichert ist. Schreiben Sie eine `if-else`-Anweisung,
+die überprüft, ob die Person volljährig ist.
+Wenn sie volljährig ist, soll `"Du bist volljährig"` auf der Konsole ausgegeben werden. Ansonsten soll ausgegeben
+werden, wie viele Jahre noch zur Volljährigkeit fehlen.
 
 ### b)
 
@@ -52,12 +54,14 @@ Zur Kontrolle: Das Ergebnis soll $1806$ sein.
 
 ### c)
 
-Wir simulieren einen Raketenstart und wollen einen Countdown auf der Konsole ausgeben, der von $10$ bis $1$ in Sekunden herunter zählt und anschließend `"Start"` ausgibt.
+Wir simulieren einen Raketenstart und wollen einen Countdown auf der Konsole ausgeben, der von $10$ bis $1$ in Sekunden
+herunter zählt und anschließend `"Start"` ausgibt.
 Um eine Sekunde zu warten, verwenden Sie die Anweisung `waitSecond();`.
 
 ### d)
 
-Schreiben Sie ein Programm, das alle geraden Zahlen in $[0, 100]$ aufsummiert. Sie dürfen hierfür keine `if`-Anweisung verwenden.
+Schreiben Sie ein Programm, das alle geraden Zahlen in $[0, 100]$ aufsummiert. Sie dürfen hierfür keine `if`-Anweisung
+verwenden.
 Zur Kontrolle: Das Ergebnis soll $2550$ sein.
 
 ### e)
@@ -67,9 +71,11 @@ Wenn ein Duplikat gefunden wird, sollen beide Indizes ausgegeben werden, an dene
 
 ### f)
 
-Programmieren Sie eine Passwortüberprüfung. Das Programm fragt einen Nutzer so lange auf der Konsole nach einer Eingabe, bis er das Richtige Passwort in die Konsole eingegeben hat.
+Programmieren Sie eine Passwortüberprüfung. Das Programm fragt einen Nutzer so lange auf der Konsole nach einer Eingabe,
+bis er das Richtige Passwort in die Konsole eingegeben hat.
 Nachdem das richtige Passwort eingegeben wurde, gibt das Programm eine positive Nachricht aus und terminiert.
-Nutzen Sie zum einlesen einer Konsolen-Zeile `readLine();`. Überlegen Sie sich, welcher Schleifentyp hier besonders elegant ist!
+Nutzen Sie zum einlesen einer Konsolen-Zeile `readLine();`. Überlegen Sie sich, welcher Schleifentyp hier besonders
+elegant ist!
 
 ## I3: FOPBot
 
@@ -91,9 +97,11 @@ Sie dürfen davon ausgehen, dass der Roboter genügend Münzen hat.
 Sei `robot` ein Roboter. Drehen Sie den Roboter so lange, bis er nach oben schaut.
 Nach jeder Drehung warten Sie eine Sekunde, in dem Sie `waitSecond();` aufrufen.
 
-Anschließend soll sich der Roboter einmal um seine eigene Achse drehen. Nach jeder Drehung soll er wieder eine Sekunde warten.
+Anschließend soll sich der Roboter einmal um seine eigene Achse drehen. Nach jeder Drehung soll er wieder eine Sekunde
+warten.
 
-Zuletzt soll der Roboter sich so lange im Kreis drehen und Münzen ablegen (siehe Abbildung), bis er keine Münzen mehr hat.
+Zuletzt soll der Roboter sich so lange im Kreis drehen und Münzen ablegen (siehe Abbildung), bis er keine Münzen mehr
+hat.
 Dafür soll der Roboter sich *erst* bewegen und *danach* überprüfen, ob er noch Münzen hat.
 Überlegen Sie sich, welcher Schleifentyp hier besonders gut geeignet ist.
 
@@ -115,7 +123,8 @@ Rufen sie nun die Methode aus der `main`-Methode auf.
 #### ii)
 
 Fügen Sie nun zu der Methode den formalen Parameter `name` des Typen `String` hinzu.
-Ändern Sie die Konsolen-Ausgabe zu `"Hello, <name>!"`, wobei `<name>` durch den aktualen Parameter `name` ersetzt werden soll.
+Ändern Sie die Konsolen-Ausgabe zu `"Hello, <name>!"`, wobei `<name>` durch den aktualen Parameter `name` ersetzt werden
+soll.
 
 Verändern Sie den Aufruf der Methode so, dass sie `"Hello, Bob!"` auf der Konsole ausgeben wird.
 
@@ -188,14 +197,16 @@ In der Vorlage ist das Interface `DoubleToDoubleFunction` gegeben, was ähnlich 
 aus der Vorlesung kennen.
 
 Die Methode `apply` bildet den übergebenen `x`-Wert auf einen Funktionswert ab.
-Die Methode `isDefined` gibt einen `boolean` zurück, der ausdrückt, ob die Funktion für den gegebenen `x`-Wert definiert ist.
+Die Methode `isDefined` gibt einen `boolean` zurück, der ausdrückt, ob die Funktion für den gegebenen `x`-Wert definiert
+ist.
 
-Ihre Aufgabe ist es, verschiedene Funktionen zu implementieren, in dem Sie für jede Funktion eine Klasse erstellen, die das Interface implementiert.
+Ihre Aufgabe ist es, verschiedene Funktionen zu implementieren, in dem Sie für jede Funktion eine Klasse erstellen, die
+das Interface implementiert.
 
 Wenn Sie eine Funktion implementiert haben, können Sie sie wie folgt auf dem Bildschirm plotten:
 
 ```java
-DoubleToDoubleFunction f = new ... ;// new Instanz der Funktionsklasse
+DoubleToDoubleFunction f = new ... ; // new Instanz der Funktionsklasse
 Plotter.plot(f);
 ```
 
@@ -237,11 +248,13 @@ Nun werden Sie ein eigenes Interface erstellen.
 
 #### i)
 
-Erstellen Sie ein neues Interface `SoundMaker`. Dieses soll eine abstrakte `void`-Methode `makeSound()` ohne Parameter haben.
+Erstellen Sie ein neues Interface `SoundMaker`. Dieses soll eine abstrakte `void`-Methode `makeSound()` ohne Parameter
+haben.
 
 #### ii)
 
-Implementieren Sie dieses Interface in einer neuen Klasse `Dog`. Diese Klasse soll die Methode `makeSound` implementieren,
+Implementieren Sie dieses Interface in einer neuen Klasse `Dog`. Diese Klasse soll die Methode `makeSound`
+implementieren,
 indem `"Woof Woof!"` auf der Konsole ausgegeben werden soll.
 
 #### iii)
@@ -304,6 +317,7 @@ Anstatt den "Rest" der Liste abzuspalten, sollen Sie beim rekursiven Aufruf den 
 bei dem der zu behandelnde Teil des Arrays beginnt.
 
 Die Methode soll also die folgende Signature haben:
+
 ```java
 public static boolean contains(int[] array, int element, int startIndex) {
     ...
@@ -370,7 +384,8 @@ Schreiben Sie das Lambda nochmal in der anderen Form und überlegen Sie sich, wa
 Jetzt werden Sie die `map`-Methode implementieren. Diese typische Array-Operation bildet ein Array
 auf ein neues Array mit einem neuen Typen ab. Dafür wird eine Funktion $mapper: E1 \rightarrow E2$ verwendet,
 wobei $E1$ der Element-Typ des ersten und $E2$ der des zweiten Arrays ist.
-Mit dieser Funktion wird jedes Element des ersten Arrays auf ein neues Element abgebildet und im neuen Array gespeichert.
+Mit dieser Funktion wird jedes Element des ersten Arrays auf ein neues Element abgebildet und im neuen Array
+gespeichert.
 
 #### i)
 
@@ -422,7 +437,8 @@ Als Argument sollen Sie diesem `super`-Konstruktor `"Undefined value: " + x` üb
 
 In der Klasse `I9` finden Sie die Methode `calculateLog`. Verändern Sie die Signatur so, dass die `NotDefinedException`
 in der Methode geworfen werden darf. Nun sollen Sie prüfen, ob der aktuale Parameter `x` kleiner oder gleich $0$ ist.
-Wenn das der Fall ist, soll eine neue `NotDefinedException` geworfen werden und ihrem Konstruktor der x-Wert übergeben werden.
+Wenn das der Fall ist, soll eine neue `NotDefinedException` geworfen werden und ihrem Konstruktor der x-Wert übergeben
+werden.
 
 #### iii)
 
@@ -438,7 +454,8 @@ Wenn eine Exception auftritt, soll sie gefangen werden und auf der Konsole soll 
 
 ### b)
 
-Erklären Sie den Unterschied zwischen Exceptionklassen, die von `RuntimeException` ableiten, und solchen, die das nicht tun.
+Erklären Sie den Unterschied zwischen Exceptionklassen, die von `RuntimeException` ableiten, und solchen, die das nicht
+tun.
 
 ## I10: Generics und Collections
 
@@ -464,7 +481,8 @@ Verändern Sie den Parameter so, dass alle Collections akzeptiert werden, die El
 die das Interface `Comparable` implementieren. Rufen Sie sich die Funktionsweise von `Comparable` in Erinnerung.
 
 Sie können nun mithilfe der `compare`-Methode das Minimum bestimmen.
-Sie müssen jetzt den Rückgabetyp der Methode so anpassen, dass wieder jedes Element der Collection zurückgegeben werden darf.
+Sie müssen jetzt den Rückgabetyp der Methode so anpassen, dass wieder jedes Element der Collection zurückgegeben werden
+darf.
 
 #### iii)
 
@@ -472,7 +490,8 @@ Wie Sie bemerkt haben, ist der Rückgabetyp in `ii)` noch nicht sonderlich elega
 Deshalb werden wir jetzt die Methode mit noch weiter verallgemeinern, sodass sie ihr volles Potenzial ausreizt.
 
 Fügen Sie der Methode den Typ-Parameter `T` hinzu. Achten Sie darauf, dass `T` nur mit Typen instantiiert werden darf,
-die `Comparable<T>` implementieren. Ändern Sie nun den Collection-Parameter so, dass die Collection Elemente des Typen `T` speichert.
+die `Comparable<T>` implementieren. Ändern Sie nun den Collection-Parameter so, dass die Collection Elemente des Typen
+`T` speichert.
 Jetzt ist es Ihnen möglich, den Rückgabetyp zu `T` zu verändern.
 
 Jetzt ist die Methode vollständig *generifiziert* und kann für alle Ermittlungen von Minima verwendet werden!
@@ -485,3 +504,45 @@ Dieses soll einen Typ-Parameter `T` haben. Die funktionale Methode soll diese Si
 $\text{test} : T \rightarrow boolean$
 
 Welchen Vorteil haben generische Functional Interfaces? Gibt es auch Nachteile?
+
+## I11: Verkettete Listen
+
+Im Package `intensiv.i11` finden Sie die Klassen `MyLinkedList` und `ListItem`,
+die Sie so ähnlich bereits aus der Vorlesung kennen.
+Machen Sie sich mit den beiden Klassen vertraut.
+
+Für dieser Aufgabe gibt es Tests, um ihre Implementierungen zu testen.
+Zum Ausführen klicken Sie rechts auf das Elefanten-Symbol und führen Sie `verification/test` aus.
+
+### a)
+
+Erklären Sie den Aufbau einer (einfach) verketteten Liste.
+Welche Funktion hat das `head` Attribut in der `MyLinkedList` Klasse?
+
+### b)
+
+Implementieren Sie die Methode `add(T)` aus `MyLinkedList`.
+Diese Methode soll den übergebenen `key` in ein `ListItem` verpacken und dieses *vorne* in die Liste einfügen.
+Achten Sie auch darauf, dass die Liste zu Beginn leer sein kann.
+
+Welche Möglichkeiten gäbe es, das neue Element immer *hinten* anzuhängen?
+
+### c)
+
+Implementieren Sie die Methode `contais(T)`. Diese soll genau dann `true` zurückgeben,
+falls sich in der verketteten Liste ein `ListItem` mit dem als Parameter übergebenen `key` befindet.
+
+Die Art, durch eine verkettete Liste zu iterieren, sollten Sie sich gut merken!
+
+### d)
+
+Ergänzen Sie die Methode get(int). Diese Methode soll den `key` des `ListItem` zurückgeben,
+der an `index`ter Stelle in der Liste steht.
+Falls `index` größer oder gleich der Länge der List ist, werfen Sie eine `IndexOutOfBoundsException`
+mit `index` als Konstruktor-Argument.
+Der Fall, dass `index` negativ oder die Liste leer ist, ist bereits vorgegeben.
+
+*Beispiel:*
+
+Gegeben sei die verkettete Liste `list` mit  `"Hello" -> "World" -> "Kuchen" -> "lecker"`.
+Dann ergibt `index(0) == "Hello"`, `list(3) == "lecker`" und `list(4)` wirft eine Exception.
