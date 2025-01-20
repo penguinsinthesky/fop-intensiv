@@ -536,7 +536,7 @@ Die Art, durch eine verkettete Liste zu iterieren, sollten Sie sich gut merken!
 
 ### d)
 
-Ergänzen Sie die Methode get(int). Diese Methode soll den `key` des `ListItem` zurückgeben,
+Ergänzen Sie die Methode `get(int)`. Diese Methode soll den `key` des `ListItem` zurückgeben,
 der an `index`ter Stelle in der Liste steht.
 Falls `index` größer oder gleich der Länge der List ist, werfen Sie eine `IndexOutOfBoundsException`
 mit `index` als Konstruktor-Argument.
