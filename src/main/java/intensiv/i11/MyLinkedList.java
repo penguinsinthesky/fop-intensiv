@@ -24,11 +24,21 @@ public class MyLinkedList<T> {
         return intensiv.Util.crash();
     }
 
+    public boolean containsRecursive(T key) {
+        return containsRecursiveHelper(key, head);
+    }
+
+    public boolean containsRecursiveHelper(T key, ListItem<T> currentItem) {
+        // TODO I11 d)
+        return intensiv.Util.crash();
+    }
+
     public T get(int index) {
         if (index < 0 || head == null) {
             throw new IndexOutOfBoundsException(index);
         }
 
+        // TODO I11 e)
         return intensiv.Util.crash();
     }
 

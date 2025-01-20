@@ -532,9 +532,18 @@ Welche Möglichkeiten gäbe es, das neue Element immer *hinten* anzuhängen?
 Implementieren Sie die Methode `contais(T)`. Diese soll genau dann `true` zurückgeben,
 falls sich in der verketteten Liste ein `ListItem` mit dem als Parameter übergebenen `key` befindet.
 
+Ihre Lösung soll iterativ sein, also eine Schleife verwenden.
+
 Die Art, durch eine verkettete Liste zu iterieren, sollten Sie sich gut merken!
 
 ### d)
+
+Nun sollen Sie dasselbe rekursiv implementieren. Dazu schreiben Sie Code in `containsRecursiveHelper`.
+Diese Methode erhält wie zuvor den `key`, nach dem gesucht werden soll, und ein `ListItem`,
+welches den aktuellen Suchpunkt repräsentiert.
+Beim rekursiven Aufruf soll also das jeweils nächste `ListItem` übergeben werden.
+
+### e)
 
 Ergänzen Sie die Methode `get(int)`. Diese Methode soll den `key` des `ListItem` zurückgeben,
 der an `index`ter Stelle in der Liste steht.

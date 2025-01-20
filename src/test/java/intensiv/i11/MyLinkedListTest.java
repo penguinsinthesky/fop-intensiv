@@ -39,6 +39,28 @@ class MyLinkedListTest {
     }
 
     @Test
+    void testContainsRecursive() {
+        MyLinkedList<Integer> list = new MyLinkedList<>();
+        list.add(3);
+        list.add(2);
+        list.add(1);
+
+        assertTrue(list.containsRecursive(3));
+        assertTrue(list.containsRecursive(2));
+        assertTrue(list.containsRecursive(1));
+    }
+
+    @Test
+    void testNotContainsRecursive() {
+        MyLinkedList<Integer> list = new MyLinkedList<>();
+        list.add(3);
+        list.add(2);
+        list.add(1);
+
+        assertFalse(list.containsRecursive(4));
+    }
+
+    @Test
     void testGetInBounds() {
         MyLinkedList<Integer> list = new MyLinkedList<>();
         list.add(3);
