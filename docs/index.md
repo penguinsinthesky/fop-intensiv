@@ -554,4 +554,4 @@ Der Fall, dass `index` negativ oder die Liste leer ist, ist bereits vorgegeben.
 *Beispiel:*
 
 Gegeben sei die verkettete Liste `list` mit  `"Hello" -> "World" -> "Kuchen" -> "lecker"`.
-Dann ergibt `index(0) == "Hello"`, `list(3) == "lecker`" und `list(4)` wirft eine Exception.
+Dann ergibt `list.get(0) == "Hello"`, `list.get(3) == "lecker`" und `list.get(4)` wirft eine Exception.
