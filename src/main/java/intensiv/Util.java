@@ -24,4 +24,8 @@ public class Util {
         }
     }
 
+    public static <T> T crash() {
+        throw new UnsupportedOperationException("This task is not implemented yet");
+    }
+
 }
