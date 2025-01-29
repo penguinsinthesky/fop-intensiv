@@ -559,7 +559,7 @@ Dann ergibt `list.get(0) == "Hello"`, `list.get(3) == "lecker`" und `list.get(4)
 ## I12: Streams
 
 Den Code für diese Aufgabe schreiben Sie in die Klasse `I12` in die Methode mit dem passenden `TODO`-Kommentar.
-Sie müssen `Stream`s verwenden, Schleifen und Rekursion ist nicht erlaubt.
+Sie müssen `Stream`s verwenden, Schleifen und Rekursion sind nicht erlaubt.
 
 ### a)
 
