@@ -555,3 +555,30 @@ Der Fall, dass `index` negativ oder die Liste leer ist, ist bereits vorgegeben.
 
 Gegeben sei die verkettete Liste `list` mit  `"Hello" -> "World" -> "Kuchen" -> "lecker"`.
 Dann ergibt `list.get(0) == "Hello"`, `list.get(3) == "lecker`" und `list.get(4)` wirft eine Exception.
+
+## I12: Streams
+
+Den Code für diese Aufgabe schreiben Sie in die Klasse `I12` in die Methode mit dem passenden `TODO`-Kommentar.
+Sie müssen `Stream`s verwenden, Schleifen und Rekursion sind nicht erlaubt.
+
+### a)
+
+Gegeben ist die Liste `list`, die Strings beinhaltet.
+Filtern Sie die Liste so, dass nur Elemente der Länge `5` den Test besteht.
+Bilden Sie jetzt mit `map` jedes verbleibende Element auf denselben `String` mit ausschließlich Großbuchstaben ab.
+Anschließend sollen Sie die gefilterten Elemente wieder in einer Liste aufsammeln und ausgeben.
+
+**Hinweis:** Verwenden Sie die `toUpperCase`-Methode von `String`.
+
+### b)
+
+Erklären Sie den Unterschied zwischen einer *intermediate Operation* und einer *terminal Operation*.
+
+### c)
+
+Gegeben ist das `int`-Array `someNumbers`.
+Finden Sie die kleinste Zahl in dem Array und speichern Sie diese in einer `int`-Variablen.
+Konnte keine kleinste Zahl gefunden werden, weil das Array leer war, soll `0` gespeichert werden.
+Geben Sie zur Überprüfung das Ergebnis aus.
+
+**Hinweis:** Nutzen Sie `Arrays.stream(int[])`, um einen Stream für das Array zu erstellen.
